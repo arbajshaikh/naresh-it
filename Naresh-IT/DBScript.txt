@@ -1,0 +1,10 @@
+SQL> SQL> create table nareshit_students(regid number(5),fname varchar2(25),lname varchar2(25),age number(3),gender varchar(5),course varchar2(20),track varchar2(25),aadhar_no number(20),mobno number(15),addrs varchar2(30),state varchar2(25),city varchar2(25),reg_date date);
+
+SQL> create sequence nareshit_seq start with 1001 increment by 1;
+
+
+SQL> INSERT INTO `naresh_it`.`students`
+(
+`fname`,`lname`,`age`,`gender`,`course`,`track`,`aadhar`,`mob`,`addrs`,`state`,`city`,`regdate`)
+VALUES
+(?,?,?,?,?,?,?,?,?,?,?,curdate());
